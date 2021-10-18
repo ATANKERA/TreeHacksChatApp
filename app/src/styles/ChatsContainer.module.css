@@ -1,0 +1,11 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.container > *:not(:last-child) {
+    margin-bottom: 10px;
+}

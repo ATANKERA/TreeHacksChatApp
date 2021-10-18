@@ -1,0 +1,49 @@
+.chat-container {
+    width: 100%;
+    max-width: 500px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+    user-select: none;
+}
+
+.chat-container:hover {
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-image {
+    flex-shrink: 0;
+    -webkit-user-drag: none;
+}
+
+.chat-name {
+    display: -webkit-box;
+    width: 100%;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.message-preview {
+    display: -webkit-box;
+    width: 100%;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
